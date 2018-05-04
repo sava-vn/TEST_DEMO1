@@ -75,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
                 alertDialog.show();
             }
         });
+        //Thêm mới Song
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
