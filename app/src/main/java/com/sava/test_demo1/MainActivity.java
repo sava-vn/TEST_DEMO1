@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
             song.setmCaSi(data.getExtras().getString("CASI"));
             song.setmThoiLuong(Integer.valueOf(data.getExtras().getString("THOILUONG")));
             listSong.clear();
-            database.insertSong(song);
+            database.insertSong(null,song);
             listSong.addAll(database.getAllSong());
             adapter.notifyDataSetChanged();
         }
